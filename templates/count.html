@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Count</title>
+</head>
+<body>
+    <a href="{% url 'home' %}"><button>Home</button></a>
+    <a href="{% url 'about' %}"><button>About</button></a>
+    <h2>Word count is: {{ count }}</h2>
+    <h2>Given Text:</h2>
+    {{ text }}
+    <br>
+    <h2>Count of Words:</h2>
+    {% for word, countT in wordD %}
+    {{ word }}:{{ countT }}
+    <br>
+    {% endfor %}
+</body>
+</html>
