@@ -8,12 +8,13 @@
 </head>
 <body>
     <h1>Word Count</h1>
+    <p>Enter your text provided in area below</p>
     <form action="{% url 'count' %}">
         <textarea name="text" id="t1" cols="50" rows="20"></textarea>
         <br>
         <input type="submit" value="count">
         <br><br><br>
     </form>
-    <a href="{% url 'about' %}"><button>About Page</button></a>
+    <a href="{% url 'about' %}"><button>About</button></a>
 </body>
 </html>
